@@ -1,0 +1,220 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* //////////////////////////////////////// */
+
+@font-face {
+    font-family: 'NfS MW';
+    src: url('../NFSMW.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    overflow: hidden;
+    font-family: 'NfS MW', sans-serif;
+    color: rgb(0, 185, 15);
+    text-shadow: 0px -2px black, 2px 0px black, 0px 2px black, -2px 0px black;
+}
+
+input {
+    margin: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.car {
+    width: 50px;
+    height: 100px;
+
+    background: url("../images/car.png");
+    background-size: cover;
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    
+}
+.car-wrapper {
+    width: 35px;
+    height: 85px;
+    position: absolute;
+}
+
+
+.enemy {
+    width: 50px;
+    height: 100px;
+
+    background: url("../images/enemy.png");
+    background-size: cover;
+
+    position: absolute;
+}
+
+.gameArea {
+    width: 300px;
+    height: 100vh;
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+
+    position: relative;
+
+    background: #222;
+    opacity: 1;
+}
+
+.line {
+    position: absolute;
+    width: 10px;
+    height: 50px;
+
+    background: #ffffff;
+    left: 140px;
+}
+
+.start-block {
+    width: 540px;
+    height: 300px;
+    padding: 25px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+
+    background: url('../images/background.jpg') no-repeat center / cover;
+    border-radius: 10px;
+
+    text-align: center;
+
+    opacity: 1;
+}
+
+
+.start {
+    background: none;
+    border: none;
+    font-size: 3.5rem;
+    font-family: "NfS MW", sans-serif;
+    color: rgb(0, 185, 15);
+    text-shadow: 0px -2px black, 2px 0px black, 0px 2px black, -2px 0px black;
+
+}
+
+.score {
+    width: 100%;
+    padding: .5rem;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 200;
+    transform: translate(-50%, 0);
+    
+    font-family: "NfS MW", sans-serif;
+    font-size: 2rem;
+    color: rgb(0, 185, 15);
+    background: rgba(0, 0, 0, 0);
+    text-align: center;
+}
+
+.best-score {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 318px;
+    left: 17px;
+}
+
+
+.greatings {
+    width: fit-content;
+    height: fit-content;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 1000;
+
+    font-size: 4rem;
+    text-align: center;
+    align-items: center;
+}
+
+.exit {
+    font-family: inherit;
+    color: inherit;
+    text-shadow: inherit;
+    font-size: 3rem;
+
+    position: absolute;
+    top: -60px;
+    left: 720px;
+}
+
+.video-bg {
+    width: 100%;
+    height: 110vh;
+    position: absolute;
+    overflow: hidden;
+}
+
+.video {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+

@@ -1,0 +1,33 @@
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.difficulty {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 2rem;
+    color: rgb(0, 185, 15);
+    text-shadow: 0px -2px black, 2px 0px black, 0px 2px black, -2px 0px black;
+}
+
+.difficulty-item {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    place-items: center;
+}
+
+.arrow {
+    font-size: 1.5rem;
+    font-size: 2rem;
+    color: rgb(0, 185, 15);
+    text-shadow: 0px -2px black, 2px 0px black, 0px 2px black, -2px 0px black;
+}
+
+.fas {
+    cursor: pointer;
+}

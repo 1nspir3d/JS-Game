@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeedForJS</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/volumeControls.css">
+    <link rel="stylesheet" href="./css/controls.css">
+    <script src="https://kit.fontawesome.com/4060509f67.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="icon.png" type="image/png">
+</head>
+<body>
+    <div class="video-bg">
+        <video class="video" src="./background.mp4" autoplay muted loop></video>
+    </div>
+    <div class="score"></div>
+    
+    <div class="game">
+        
+        <div class="start-block">
+            <button class="start">START</button>
+
+            <p class="best-score"></p>
+
+            <div class="difficulty">
+                <div class="difficulty-item">
+                    <button class="arrowLeft">
+                        <i class="fas fa-chevron-left arrow"></i>
+                    </button>
+    
+                    <div class="level">
+                        Easy
+                    </div>
+    
+                    <button class="arrowRight">
+                        <i class="fas fa-chevron-right arrow"></i>
+                    </button>
+                </div>
+                
+            </div>
+
+            <div class="controls">
+                <i class="fas fa-backward previous"></i>
+                <i class="fas fa-play play"></i>
+                <i class="fas fa-forward next"></i>
+                <div class="volume">
+                    <i class="fas fa-volume-up mute"></i>
+                    <input class="range" type="range">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="greatings hide">
+            <p class="greatings-text">You Beat The Score!</p>
+            <button class="exit">X</button>
+        </div>
+
+        <div class="gameArea"></div>
+    </div>
+
+    <script src="./js/audioPlayer.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

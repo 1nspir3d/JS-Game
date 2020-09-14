@@ -14,7 +14,7 @@ nextButton.addEventListener('click', nextSong);
 previousButton.addEventListener('click', previousSong);
 
 
-let trackList = ['../1.mp3', '../2.mp3', '../3.mp3',];
+let trackList = ['1.mp3', '2.mp3', '3.mp3',];
 let songId = 0; 
 let rangeValue = 50;
 

@@ -18,6 +18,10 @@ let trackList = ['1.mp3', '2.mp3', '3.mp3',];
 let songId = 0; 
 let rangeValue = 50;
 
+let myAudio = new Audio(trackList[songId]);
+myAudio.volume = range.value / 100;
+
+myAudio.addEventListener('ended', nextSong);
 
 function nextSong() {
     songId++;
@@ -44,11 +48,6 @@ function previousSong() {
         playButton.classList.replace('fa-play', 'fa-pause');
     }
 }
-
-
-
-let myAudio = new Audio(trackList[songId]);
-myAudio.volume = range.value / 100;
 
 function changeVolume() {
     myAudio.volume = range.value / 100;

@@ -43,7 +43,7 @@ const setting = {
 let levelId = 0;
 let levelArray = ['Easy', 'Medium', 'Hard',];
 
-let bestScoreSound = new Audio('../bestScore.mp3');
+let bestScoreSound = new Audio('bestScore.mp3');
 
 bestScore.innerHTML = 'Best Score: ' + localStorage.getItem('RECORD');
 
@@ -234,7 +234,7 @@ function rotateCar() {
 }
 
 function warningMessage() {
-    let intro = new Audio('../intro.mp3');
+    let intro = new Audio('intro.mp3');
     intro.play();
 
     myAudio.pause();
